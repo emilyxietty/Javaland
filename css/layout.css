@@ -1,0 +1,186 @@
+/*blocks*/
+/*.ib {
+    width: 100%;
+    margin: 0px;
+}*/
+
+.ib {
+    display:inline-block;
+    min-height: 50px;
+    margin: 1px;
+    padding:0;
+    vertical-align: top;
+}
+.i4 {
+    width: 18%;
+    padding-top: 20px;
+    text-align: center;
+}
+.wrapper {
+    width:100%;
+    margin:0;
+}
+.section {
+    margin:0;
+    background-color: white;
+}
+#about {
+    background-color: aliceblue;
+    padding: 2rem 6rem 2rem 6rem;
+    background-image: url("../images/birdpattern.png");
+}
+#culture {
+    padding: 2rem 6rem 2rem 6rem;
+}
+#references {
+    padding: 2rem 6rem 2rem 6rem;
+}
+#gallery {
+    background-color:#000017;
+    background-image: url("../images/gridpattern.png") !important;
+}
+/*image*/
+img {
+    width: 100%;
+    height: 100%;
+}
+.square{
+    height: 300px;
+    overflow:hidden
+}
+.image {
+    display: inline-block;
+    position: relative;
+}
+.image.fit {
+    display: block;
+    margin: 0 0 2px 0;
+    width: 100%;
+}
+/*gallery*/
+.outer-gallery {
+    margin:5rem;   
+    display: grid;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 5px;
+}
+.inner-gallery {
+    flex: 20%;
+    max-width: 25%;
+    padding: 0 5px;
+}
+/*about grid*/
+.outer-grid-about {
+    margin:2rem;   
+    display: grid;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 1%;
+}
+.inner-grid-about {
+    flex: 30%;
+    max-width: 30%;
+    padding: 0 1%;
+}
+/*culture grid*/
+.outer-grid-culture {
+    margin:2rem;   
+    display: grid;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 1%;
+}
+.inner-grid-culture {
+    flex: 48%;
+    max-width: 48%;
+    padding: 0 1%;
+}
+/*list grid*/
+li {
+    padding: 5px;
+}
+li:hover {
+    background-color:#000224; 
+    color:white;
+    transition: background-color 1s;
+}
+ul {
+    font-family: helvetica;
+    padding-left: 30px;
+    color: grey;
+    font-weight: 100;
+}
+
+/*banner*/
+.banner {
+    width:100%;
+    height: 100%;
+}
+#banner { 
+    background-repeat: no-repeat;
+    height: 30rem;
+    margin: 20px 0;
+    text-align:center;
+    position:relative;
+} 
+/*button*/
+#topButton {
+    display: none;
+    position: fixed;
+    font-size: 15px;
+    bottom: 1rem;
+    right: 1rem;
+    border: none;
+    outline: none;
+    background-color: #000224;
+    color: white;
+    padding: 18px;
+    border-radius: 3px;
+}
+#topButton:hover {
+    background-color: grey;
+}
+
+/* animation */
+.element {
+    height: 130px;
+    width: 1200px;
+    padding: 2rem;
+    overflow: hidden;
+    padding-top:0;
+    background-image: url("../images/waves.png");
+    animation: nudge 4s linear infinite;
+}
+
+@keyframes nudge {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(200px, 0);
+  }
+}
+
+/*@keyframes moveWaves {
+    0% {left:0px;}
+    100% {left:600px;}
+}
+#waves {
+    animation: moveWaves 5s infinite;
+}
+.waveAnimation {
+  height: 100%;
+  animation-name: moveWaves;
+  animation-duration: 4s;
+}
+
+.animationSection {
+    background-color:white;
+}
+.waveBox {
+    position:relative;
+    width:700px;
+    height:200px;
+    margin:auto;
+}
